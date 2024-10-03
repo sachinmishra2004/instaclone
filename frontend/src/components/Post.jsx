@@ -115,7 +115,7 @@ const Post = ({ post }) => {
   const boomarkHandler = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/post/${post?._id}/bookmark`,
+        `https://instaclone-1-d6qw.onrender.com/api/v1/post/${post?._id}/bookmark`,
         { withCredentials: true }
       );
       if (res.data.success) {
